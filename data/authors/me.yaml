@@ -20,7 +20,7 @@ bio: |
 
 links:
   - icon: at-symbol
-    url: mailto:23210220065@m.fudan.edu.cn
+    url: mailto:v.yuzhu1@gmail.com
     label: Email
   - icon: brands/github
     url: https://github.com/ZeHeru
@@ -28,9 +28,12 @@ links:
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=GtyV_YsAAAAJ&hl=en
     label: Google Scholar
-  - icon: hero/globe-alt
-    url: https://blog.csdn.net/qd1813100174
-    label: CSDN
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0007-1068-4548
+    label: ORCID
+  - icon: hero/document-text
+    url: https://openreview.net/profile?id=~Yu_Zhu26
+    label: OpenReview
 
 interests:
   - AI for Science
