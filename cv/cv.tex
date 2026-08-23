@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1.1cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\IfFileExists{/usr/share/fonts/liberation-sans/LiberationSans-Regular.ttf}{
+  \setmainfont[
+    Path=/usr/share/fonts/liberation-sans/,
+    BoldFont=LiberationSans-Bold.ttf,
+    ItalicFont=LiberationSans-Italic.ttf,
+    BoldItalicFont=LiberationSans-BoldItalic.ttf
+  ]{LiberationSans-Regular.ttf}
+}{
+  \setmainfont{TeX Gyre Heros}
+}
+\definecolor{accent}{HTML}{4F46E5}
+\definecolor{muted}{HTML}{475569}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Yu Zhu},
+  pdftitle={Yu Zhu - Curriculum Vitae}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=0pt,topsep=1pt,parsep=0pt}
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}%
+  {4pt}{2pt}{\large\bfseries\color{accent}}}
+\makeatother
+
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill\textcolor{muted}{#2}\\
+  \textit{#3}\hfill\textcolor{muted}{#4}\par
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Yu Zhu}\\[3pt]
+  \textcolor{muted}{AI for Science · Computational Chemistry · Computer Vision}\\[4pt]
+  \href{mailto:23210220065@m.fudan.edu.cn}{23210220065@m.fudan.edu.cn}
+  \quad|\quad
+  \href{https://github.com/ZeHeru}{github.com/ZeHeru}
+  \quad|\quad
+  \href{https://scholar.google.com/citations?user=GtyV_YsAAAAJ&hl=en}{Google Scholar}
+\end{center}
+\small
+
+\section{Research Profile}
+Research at the intersection of AI for Science, computational chemistry, and
+computer vision, spanning machine learning force fields, physics-driven
+reconstruction of molecular orbitals from scanning tunneling microscopy
+images, open-set fine-grained recognition, and materials modeling.
+
+\section{Education}
+\entry{M.Sc., Department of Chemistry}{Sep 2023 -- Jun 2026}
+      {Fudan University}{Shanghai, China}
+\begin{itemize}
+  \item Supervisors: Prof. Xin Xu and Young Researcher Sai Duan.
+  \item Research: machine learning force fields, open-set recognition, and scanning tunneling microscopy.
+\end{itemize}
+
+\entry{B.Sc., College of Chemistry, Chemical Engineering and Materials Science}{Sep 2019 -- Jun 2023}
+      {Soochow University}{Suzhou, China}
+\begin{itemize}
+  \item GPA: 3.8/4.0 (92.1/100).
+  \item Supervisors: Prof. Jianlin Yao and Assoc. Prof. Minmin Xu.
+\end{itemize}
+
+\section{Experience}
+\entry{AI for Science Intern}{Jul 2024 -- Jun 2025}
+      {Microsoft Research}{Shanghai, China}
+\begin{itemize}
+  \item Contributed benchmarks and scalable computational workflows for materials modeling.
+  \item Evaluated universal machine learning force fields and ran inference on models up to 1B parameters.
+  \item Managed high-throughput datasets with up to 200M entries and built Azure pipelines supporting up to 10K concurrent tasks.
+\end{itemize}
+
+\section{Selected Projects}
+\textbf{\href{https://github.com/ZeHeru/STM_net/tree/main}{STM-Net: Reconstructing Molecular Orbitals from STM Images}}
+\hfill\textcolor{muted}{Jan 2024 -- Jul 2024}
+\begin{itemize}
+  \item Simulated STM images at the DFT level using Bardeen's approximation.
+  \item Developed a physics-driven U-Net to separate s-wave molecular-orbital signals from p-wave CO-tip contributions.
+  \item Reached PSNR above 37 dB using 10\% of the training data and above 43 dB on the full dataset.
+\end{itemize}
+
+\textbf{\href{https://github.com/microsoft/mattersim}{MatterSim: Materials Modeling Workflows}}
+\hfill\textcolor{muted}{Jul 2024 -- Jun 2025}
+\begin{itemize}
+  \item Built benchmarks and high-throughput workflows using VASP, atomate2, phonopy, phono3py, ESEN, MACE, and ORB.
+\end{itemize}
+
+\textbf{MPBR for Open-Set Fine-Grained Recognition}
+\hfill\textcolor{muted}{Jan 2025 -- Jun 2025}
+\begin{itemize}
+  \item Developed benchmark pipelines and evaluated OSR models on iNat2021-OSR using t-SNE, Grad-CAM, Swin Transformer, and HAN-OSFGR.
+\end{itemize}
+
+\textbf{SERS Imaging for Fingerprint Identification}
+\hfill\textcolor{muted}{Apr 2021 -- Jun 2023}
+\begin{itemize}
+  \item Performed SERS imaging and chemical mapping of latent and live fingerprints on flexible substrates.
+\end{itemize}
+
+\section{Publications}
+\begin{enumerate}[leftmargin=1.5em,itemsep=3pt,topsep=2pt]
+  \item \textbf{Yu Zhu}, R. Xue, H. Ren, Y. Chen, W. Yan, B. Wu, S. Duan,
+  H. Zhang, L. Chi, and X. Xu.
+  \href{https://doi.org/10.1021/jacsau.5c00310}{Reconstructing Pristine Molecular Orbitals from Scanning Tunneling Microscope Images via Artificial Intelligence Approaches}.
+  \textit{JACS Au}, 5(7), 3163--3170, 2025.
+
+  \item J. Li, Z. Chen, Q. Wang, H. Yang, Z. Lu, G. Li, S. Chen,
+  \textbf{Yu Zhu}, et al.
+  \href{https://doi.org/10.48550/arXiv.2503.11568}{Probing the Limit of Heat Transfer in Inorganic Crystals with Deep Learning}.
+  arXiv:2503.11568, 2025.
+
+  \item J. Tan, P. Jing, \textbf{Yu Zhu}, and Y. Liu.
+  \href{https://openaccess.thecvf.com/content/ICCV2025/html/Tan_MPBR_Multimodal_Progressive_Bidirectional_Reasoning_for_Open-Set_Fine-Grained_Recognition_ICCV_2025_paper.html}{MPBR: Multimodal Progressive Bidirectional Reasoning for Open-Set Fine-Grained Recognition}.
+  \textit{ICCV}, 1282--1291, 2025.
+
+  \item M. Wu, J. Tan, \textbf{Yu Zhu}, and J. Ren.
+  \href{https://doi.org/10.48550/arXiv.2604.03547}{KappaFormer: Physics-aware Transformer for Lattice Thermal Conductivity via Cross-domain Transfer Learning}.
+  arXiv:2604.03547, 2026.
+\end{enumerate}
+
+\section{Honors \& Awards}
+\begin{itemize}
+  \item China National Scholarship, top 0.2\% (2025 and 2022).
+  \item Silver Award, China International College Students' Innovation and Entrepreneurship Competition, top 0.02\% (2021).
+  \item First Prize, Chinese Mathematics Competition for College Students, top 5.3\% (2020).
+\end{itemize}
+
+\section{Technical Skills}
+\textbf{Scientific computing:} Python, VASP, atomate2, joblib, phonopy, phono3py.\\
+\textbf{Machine learning:} U-Net, DAE, Mask2Former, ESEN, MACE, ORB, Swin Transformer, HAN-OSFGR.\\
+\textbf{Scientific methods:} STM simulation, Bardeen approximation, Tersoff-Hamann theory, Chen derivative rule, SERS mapping.\\
+\textbf{Visualization:} t-SNE, Grad-CAM, Origin.
+
+\end{document}

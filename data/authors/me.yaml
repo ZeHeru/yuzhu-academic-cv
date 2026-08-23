@@ -1,116 +1,133 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
-name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
-status:
-  icon: "☕️"
-role: Senior AI Research Scientist
-bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
 
-affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+name:
+  display: Yu Zhu
+  given: Yu
+  family: Zhu
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+
+role: AI for Science · Computational Chemistry · Computer Vision
+
+bio: |
+  Yu Zhu works at the intersection of AI for Science, computational chemistry,
+  and computer vision. His research spans machine learning force fields,
+  physics-driven reconstruction of molecular orbitals from scanning tunneling
+  microscopy images, open-set fine-grained recognition, and materials modeling.
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
+    url: mailto:23210220065@m.fudan.edu.cn
+    label: Email
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://github.com/ZeHeru
+    label: GitHub
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://scholar.google.com/citations?user=GtyV_YsAAAAJ&hl=en
+    label: Google Scholar
+  - icon: hero/globe-alt
+    url: https://blog.csdn.net/qd1813100174
+    label: CSDN
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - AI for Science
+  - Machine learning force fields
+  - Scanning tunneling microscopy
+  - Open-set recognition
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: M.Sc., Department of Chemistry
+    institution: Fudan University
+    year: 2023–2026
+    start: 2023-09-01
+    end: 2026-06-30
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Shanghai, China. Supervised by Prof. Xin Xu and Young Researcher Sai Duan.
+      Research focused on machine learning force fields, open-set recognition,
+      and scanning tunneling microscopy.
+  - degree: B.Sc., College of Chemistry, Chemical Engineering and Materials Science
+    institution: Soochow University
+    year: 2019–2023
+    start: 2019-09-01
+    end: 2023-06-30
+    summary: |
+      Suzhou, China. GPA: 3.8/4.0 (92.1/100). Supervised by Prof. Jianlin Yao
+      and Assoc. Prof. Minmin Xu. Research focused on surface-enhanced Raman
+      spectroscopy and fingerprint imaging.
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: AI for Science Intern
+    org: Microsoft Research
+    start: 2024-07-01
+    end: 2025-06-30
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+      Contributed benchmarks and scalable computational workflows for materials
+      modeling. Evaluated universal machine learning force fields, ran inference
+      on models up to 1B parameters, managed high-throughput datasets with up to
+      200M entries, and built Azure pipelines supporting up to 10K concurrent tasks.
+    tags:
+      - Materials modeling
+      - Machine learning force fields
+      - High-throughput computing
+      - Azure
     button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      text: Microsoft Research article
+      url: https://www.microsoft.com/en-us/research/articles/mattersim/
+      icon: hero/arrow-top-right-on-square
 
 skills:
-  - name: Technical Skills
+  - name: Scientific Computing
     items:
       - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
+      - label: VASP
+      - label: atomate2
+      - label: joblib
+      - label: phonopy
+      - label: phono3py
+  - name: Machine Learning
     items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-
-languages:
-  - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
+      - label: U-Net
+      - label: DAE
+      - label: Mask2Former
+      - label: ESEN
+      - label: MACE
+      - label: ORB
+      - label: Swin Transformer
+      - label: HAN-OSFGR
+  - name: Scientific Methods
+    items:
+      - label: STM simulation
+      - label: Bardeen approximation
+      - label: Tersoff-Hamann theory
+      - label: Chen derivative rule
+      - label: SERS mapping
+  - name: Visualization
+    items:
+      - label: t-SNE
+      - label: Grad-CAM
+      - label: Origin
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
+  - title: China National Scholarship
+    awarder: Ministry of Education of China
+    date: '2025-12-01'
+    summary: Top 0.2%.
+    icon: hero/trophy
+  - title: China National Scholarship
+    awarder: Ministry of Education of China
+    date: '2022-12-01'
+    summary: Top 0.2%.
+    icon: hero/trophy
+  - title: Silver Award, China International College Students' “Internet+” Innovation and Entrepreneurship Competition
+    awarder: China International College Students' Innovation and Entrepreneurship Competition
+    date: '2021-11-01'
+    summary: Top 0.02%.
+    icon: hero/trophy
+  - title: First Prize, Chinese Mathematics Competition for College Students
+    awarder: Chinese Mathematical Society
+    date: '2020-12-01'
+    summary: Top 5.3%.
     icon: hero/trophy

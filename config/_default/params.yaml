@@ -13,19 +13,20 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Yu Zhu"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
     type: person # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: ""
+    tagline: "AI for Science · Computational Chemistry · Computer Vision"
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "Academic website of Yu Zhu, featuring research in AI for Science,
+      computational chemistry, machine learning force fields, scanning tunneling
+      microscopy, and open-set recognition."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
+      twitter: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -38,8 +39,8 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: ""
+      primary: "indigo"
+      secondary: "cyan"
       neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}
@@ -90,7 +91,7 @@ hugoblox:
     # Feature toggles
     search: true
     theme_toggle: true
-    theme_picker: true
+    theme_picker: false
     language_switcher: true
     # Call-to-action button
     cta:
@@ -115,7 +116,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© {year} {name}"
     license:
       type: cc # cc | custom
       allow_derivatives: false
@@ -146,8 +147,8 @@ hugoblox:
       allow:
         - /
       disallow: []
-      note: "Guidance for AI crawlers - customize to match your public content."
-      contact: ""
+      note: "Public academic profile and research portfolio."
+      contact: "23210220065@m.fudan.edu.cn"
 
   # ────────────────────────────────────────────────────────────────────────────
   # CONTENT
@@ -156,7 +157,7 @@ hugoblox:
   content:
     # Math rendering
     math:
-      enable: false
+      enable: true
     # Table of contents
     toc:
       enable: true
@@ -230,8 +231,8 @@ hugoblox:
   # Source code repository for "Edit this page" links
   # ────────────────────────────────────────────────────────────────────────────
   repository:
-    enable: false
-    url: "" # e.g., https://github.com/username/repo
+    enable: true
+    url: "https://github.com/ZeHeru/yuzhu-academic-cv"
     branch: main
     content_dir: content
 
